@@ -1,12 +1,10 @@
 // Täydennä funktio convertNumberToString niin, että se muuntaa saamansa numeron merkkijonoksi.
-// Täydennä funktio convertStringToNumber niin, että se muuntaa saamansa merkkijonon numeroksi.
-
 function convertNumberToString(number) {
-  return number;
+  return number.toString();
 }
-
+// Täydennä funktio convertStringToNumber niin, että se muuntaa saamansa merkkijonon numeroksi.
 function convertStringToNumber(string) {
-  return string;
+  return Number(string);
 }
 
 // Esimerkki - älä muokkaa

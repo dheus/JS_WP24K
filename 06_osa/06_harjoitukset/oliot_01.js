@@ -4,14 +4,19 @@ Luo olio nimeltään `henkilö` ominaisuuksilla: `nimi` asetettuna "Aleksi" ja `
 Tulosta tämä olio konsoliin.
 */
 // Kirjoita olio tähän
-
+const henkilö = {
+    nimi: "Aleksi",
+    ikä: 30
+};
+console.log(henkilö);
 
 // Tehtävä 2: Olio-ominaisuuksien käyttäminen
 /*
 Käytä ja kirjaa `nimi` ja `ikä` henkilö-oliosta.
 */
 // Kirjoita koodisi tähän
-
+console.log("nimi: " + henkilö.nimi);
+console.log("ikä: " + henkilö.ikä);
 
 // Tehtävä 3: Olion ominaisuuksien muokkaaminen
 /*
@@ -19,7 +24,9 @@ Päivitä `henkilö`-olio: aseta `ikä` arvoon 31. Lisää sitten uusi ominaisuu
 Kirjaa päivitetty olio.
 */
 // Kirjoita koodisi tähän
-
+henkilö.ikä = 31;
+henkilö.maa = "Kroatia";
+console.log(henkilö);
 
 // Tehtävä 4: Sisäkkäiset oliot
 /*
@@ -28,7 +35,14 @@ Kirjaa `opiskelijan` `kurssi`.
 Odotettu tulos: "Kurssi: JavaScript"
 */
 // Kirjoita olio ja koodisi tähän
-
+const opiskelija = {
+    nimi: "Emilia",
+    tiedot: {
+        ikä: 22,
+        kurssi: "JavaScript"
+    }
+};
+console.log("Kurssi: " + opiskelija.tiedot.kurssi);
 
 // Tehtävä 5: Ominaisuuksien poistaminen
 /*
@@ -36,7 +50,8 @@ Poista `henkilö`-oliosta ominaisuus `ikä`. Kirjaa saatu olio.
 Odotettu tulos: { nimi: "Aleksi", maa: "Kroatia" }
 */
 // Kirjoita koodisi tähän
-
+delete henkilö.ikä;
+console.log(henkilö);
 
 // Tehtävä 6: Olion avaimet ja arvot
 /*
@@ -46,6 +61,9 @@ Avaimet: nimi, maa
 Arvot: Aleksi, Kroatia
 */
 // Kirjoita koodisi tähän
+console.log("Avaimet: " + Object.keys(henkilö).join(", "));
+console.log("Arvot: " + Object.values(henkilö).join(", "));
+
 
 // Tehtävä 7: Olion metodien käyttäminen
 /*
@@ -54,3 +72,7 @@ Kutsu tätä metodia ja kirjaa tulos.
 Odotettu tulos: "Hei, nimeni on Aleksi"
 */
 // Muokkaa henkilö-oliota ja kirjoita metodin kutsuminen tähän
+henkilö.tervehdi = function() {
+    return `Hei, nimeni on ${this.nimi}`;
+};
+console.log(henkilö.tervehdi());

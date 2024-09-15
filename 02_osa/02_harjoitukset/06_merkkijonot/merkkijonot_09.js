@@ -3,7 +3,7 @@ Muokkaa funktio getFullName function palauttamaan interpolation avulla so that i
  */
 
 function getFullName(firstName, lastName) {
-  return ` `;
+  return `${firstName} ${lastName}`;
 }
 
 // Esimerkki - älä muokkaa
@@ -13,8 +13,12 @@ console.log(getFullName('Alex', 'Blue')); // "Alex Blue"
 
 
 // Treenaa: Keksi itse samanlainen funktio eri nimellä 
-
+function fullName(first, last) {
+  return `${first} ${last}`;
+}
 
 
 
 // Kutsu tekemääsi funktiota
+console.log(fullName('Spider', 'Man'));
+console.log(fullName('Super', 'Man'));

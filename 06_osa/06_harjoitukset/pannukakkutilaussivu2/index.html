@@ -15,7 +15,7 @@
     <div class="container">
       <div class="image-container">
         <img src="pancake.jpeg" alt="Delicious pancakes" />
-        <div class="price-banner"><span id="totalPrice">5€</span></div>
+        <div class="price-banner"><span class="totalPrice">5€</span></div>
       </div>
       <div class="form-container">
         <h2>Muokkaa Pancake-tilaustasi</h2>
@@ -61,7 +61,7 @@
           </div>
         </div>
         <div class="customization-section">
-          <p>Lisävaihtoehdot:</p>
+          <p>Lisävaihtoehdot</p>
           <div>
             <input
               type="checkbox"
@@ -89,7 +89,9 @@
             <label for="customerName">Nimesi</label>
             <input type="text" id="customerName" />
           </div>
-          <button>Tee tilaus</button>
+          <br>
+          <input id="order-button" type="button" value="Tee tilaus">
+          <br>
         </div>
         <div class="order">
           <p>Tyyppi: <span id="order_type"></span></p>
@@ -98,8 +100,8 @@
           <p>Nimi: <span id="order_name"></span></p>
           <p>Hinta: <span id="order_price"></span></p>
         </div>
-        <!--         <div class="price-display">
-          <h3>Total Price: <span id="totalPrice">5€</span></h3>
+        <!-- <div class="price-display">
+          <h3>Total Price: <span id="totalPrice">$5</span></h3>
         </div> -->
       </div>
     </div>

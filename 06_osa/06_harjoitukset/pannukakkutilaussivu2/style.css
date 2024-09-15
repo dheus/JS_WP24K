@@ -22,10 +22,10 @@ select {
 
 input,
 select,
-button {
+.order-button {
   font-family: 'Sansita', sans-serif;
 }
-button {
+.order-button {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 2px;

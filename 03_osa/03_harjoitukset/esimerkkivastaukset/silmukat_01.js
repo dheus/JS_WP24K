@@ -18,4 +18,4 @@ let luvut = "";
 for (let k=1; k<100; k+=2){
   luvut += k + ", "
 }
-console.log(luvut)
+console.log(luvut);

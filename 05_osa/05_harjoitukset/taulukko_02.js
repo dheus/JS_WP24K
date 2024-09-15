@@ -8,6 +8,19 @@ Odotettu tulos:
 "Taulukon pituus on suurempi tai yhtä suuri kuin 5."
 */
 // Kirjoita funktiosi tähän
+function myAlphabetLength(myAlphabet) {
+    let length = myAlphabet.length;
+    console.log(`Taulukon myAlphabet pituus: ${length}`);
+    if (length >= 5) {
+        console.log("Taulukon pituus on suurempi tai yhtä suuri kuin 5.");
+    } else {
+        console.log("Taulukon pituus on alle 5.");
+    }
+}
+console.log("Harjoitus 1:");
+myAlphabetLength(myAlphabet);
+console.log();
+
 
 // Harjoitus 2: Käy läpi taulukko ja kirjaa jokainen alkio sen indeksillä
 const planets = ['Merkurius', 'Venus', 'Maa', 'Mars', 'Jupiter'];
@@ -19,6 +32,11 @@ Odotetut tulokset:
 "Planeetta: Jupiter, Indeksi: 4"
 */
 // Kirjoita koodisi tähän
+console.log("Harjoitus 2:");
+planets.forEach((planet, index) => {
+    console.log(`Planeetta: ${planet}, Indeksi: ${index}`);
+});
+console.log();
 
 // Harjoitus 3: Kirjaa taulukon alkiot niiden tyyppeineen
 const wowDatatypes = [1, 'text', false, null, undefined];
@@ -31,6 +49,11 @@ Odotetut tulokset:
 "Alkio: undefined, Indeksi: 4, Tyyppi: undefined"
 */
 // Kirjoita koodisi tähän
+console.log("Harjoitus 3:");
+wowDatatypes.forEach((item, index) => {
+    console.log(`Alkio: ${item}, Indeksi: ${index}, Tyyppi: ${typeof item}`);
+});
+console.log();
 
 // Harjoitus 4: Kirjaa taulukon alkiot ilman silmukkaa
 let myArr = [1, 2, 'One', true];
@@ -39,6 +62,9 @@ Kirjaa jokainen alkio tässä taulukossa metodin avulla eli ilman silmukkaa.
 Odotetut tulokset: 1, 2, "One", true
 */
 // Kirjoita koodisi tähän
+console.log("Harjoitus 4:");
+console.log(...myArr);
+console.log();
 
 // Harjoitus 5: Etsi yhteiset kurssit kahden opiskelijan välillä
 let student1Courses = ['Matematiikka', 'Englanti', 'Ohjelmointi'];
@@ -48,6 +74,10 @@ Tunnista ja kirjaa ylös kaikki kurssit, jotka ovat yhteisiä sekä student1Cour
 Odotettu tulos: "Yhteinen kurssi: Ohjelmointi"
 */
 // Kirjoita koodisi tähän
+console.log("Harjoitus 5:");
+let commonCourses = student1Courses.filter(course => student2Courses.includes(course));
+commonCourses.forEach(course => console.log(`Yhteinen kurssi: ${course}`));
+console.log();
 
 // Harjoitus 6: Kirjaa jokainen taulukon alkion kirjain
 let furniture = ['Pöytä', 'Tuolit', 'Matto'];
@@ -59,6 +89,11 @@ Odotetut tulokset:
 "Kirjaimet 'Matto'-sanassa: M, a, t, t, o"
 */
 // Kirjoita koodisi tähän
+console.log("Harjoitus 6:");
+furniture.forEach(item => {
+    console.log(`Kirjaimet '${item}'-sanassa: ${item.split('').join(', ')}`);
+});
+console.log();
 
 // Harjoitus 7: Suodata positiiviset lämpötilat
 let temperatures = [-5, 3, -1, 22, -40, 5, 18];
@@ -67,6 +102,12 @@ Kirjoita getPositiveTemperatures-funktio siten, että se palauttaa taulukon, jok
 Odotettu tulos: [3, 22, 5, 18]
 */
 // Kirjoita koodisi tähän
+function getPositiveTemperatures(temperatures) {
+    return temperatures.filter(temperatures => temperatures > 0);
+}
+console.log("Harjoitus 7:");
+console.log(getPositiveTemperatures(temperatures));
+console.log();
 
 // Harjoitus 8: Suodata parittomat vuodet
 /*
@@ -78,7 +119,12 @@ getOddYears([2000, 2015, 2018, 2020]) -> [2015]
 */
 
 // Kirjoita koodisi tähän
+console.log("Harjoitus 8:");
 
+function getOddYears(years) {
+    return years.filter(year => year % 2 !== 0);
+}
+console.log();
 // Testaus - Poista alta kommenttimerkinnät, niin voit testata funktion toimintaa
-// console.log(getOddYears([2019, 2020, 2021])); // [2019, 2021]
-// console.log(getOddYears([2000, 2015, 2018, 2020])); // [2015]
+console.log(getOddYears([2019, 2020, 2021])); // [2019, 2021]
+console.log(getOddYears([2000, 2015, 2018, 2020])); // [2015]

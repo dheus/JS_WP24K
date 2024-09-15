@@ -6,3 +6,27 @@
 
 - Lisää kommentteja koodiin selittämään, mitä kukin operaatio tekee.
 */
+
+let a = 112;
+let b = 50;
+
+let summa = a + b;
+let erotus = a - b;
+let tulo = a * b;
+let osamäärä = a / b;
+let jakojäännös = a % b;
+
+// Tulostaa summan
+console.log("Summa:", summa);
+
+// Tulostaa erotuksen
+console.log("Erotus:", erotus);
+
+// Tulostaa tulon
+console.log("Tulo:", tulo);
+
+// Tulostaa osamäärän
+console.log("Osamäärä:", osamäärä);
+
+// Tulostaa jakojäännöksen
+console.log("Jakojäännös:", jakojäännös); 

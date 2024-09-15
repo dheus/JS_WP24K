@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald&display=swap" />
+    <title>Osa7</title>
+  </head>
+  <body>
+    <h2>Autot</h2>
+    <form id="carForm">
+      <label for="regNumber">Registration Number:</label>
+      <input type="text" id="regNumber" name="regNumber" /><br /><br />
+
+      <label for="manufacturer">Manufacturer:</label>
+      <input type="text" id="manufacturer" name="manufacturer" /><br /><br />
+
+      <label for="model">Model:</label>
+      <input type="text" id="model" name="model" /><br /><br />
+
+      <label for="owner">Owner:</label>
+      <input type="text" id="owner" name="owner" /><br /><br />
+
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" /><br /><br />
+
+      <label for="color">Color:</label>
+      <input type="text" id="color" name="color" /><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+    <br>
+    <form action="">
+      <label for="regNumber">Registration Number for Searching:</label>
+      <script src="script.js"></script>
+
+      <input type="text" id="regNumber" name="regNumber" /><br /><br />
+      <button type="search">Search</button>
+      <div id="searchResults"></div>
+    </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>
