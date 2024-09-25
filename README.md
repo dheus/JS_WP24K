@@ -9,6 +9,7 @@ The target audience includes students and beginners learning JavaScript, especia
 Built with: 
 
 - HTML
+- CSS
 - JS
 
 ## Setup and usage
