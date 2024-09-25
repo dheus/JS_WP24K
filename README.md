@@ -1,9 +1,6 @@
 # JS Course (Business College Helsinki)
 
 The project was created to complete the course requirements and demonstrate the skills learned, including JavaScript fundamentals and basic web interactions.
-The main feature of the project is a contact form, built using HTML and JavaScript, to demonstrate form handling, user input validation, and basic interactivity on a web page.
-
-The target audience includes students and beginners learning JavaScript, especially those looking to understand how to create functional forms for web applications. This project was made to apply the concepts taught in the course and fulfill the assignment requirements
 
 ## Technologies used
 
