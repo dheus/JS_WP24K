@@ -2,6 +2,8 @@
 
 The project was created to complete the course requirements and demonstrate the skills learned, including JavaScript fundamentals and basic web interactions.
 
+The target audience includes students and beginners learning JavaScript, especially those looking to understand how to create functional forms for web applications. This project was made to apply the concepts taught in the course and fulfill the assignment requirements
+
 ## Technologies used
 
 Built with: 
